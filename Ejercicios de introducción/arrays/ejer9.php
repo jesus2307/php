@@ -3,37 +3,54 @@
 array("Antonio"=>"31", "María"=>"28", "Juan"=>"29", "Pepe"=>"27")
 */
 
-list = array("Antonio"=>"31", "María"=>"28", "Juan"=>"29", "Pepe"=>"27")
-echo '<h2>De forma ascendente ordenado por valor.</h2>'
+  
+<?php
+
+$lista = array("Antonio"=>"31", "María"=>"28", "Juan"=>"29", "Pepe"=>"27");
+
+echo "<h2>Ordenación de menor a mayor por el valor</h2>";
+
+// Ordenamos el array de menor a mayor por el valor
 asort($lista);
 
-foreach ($lista as $clave => $valor){
-echo 'clave' $clave = valor $valor 
-echo "<br>"
+// Imprimimos el contenido del array
+foreach ($lista as $clave => $valor) {
+    echo "Clave: $clave - Valor: $valor";
+    echo "<br>";
 }
 
-list = array("Antonio"=>"31", "María"=>"28", "Juan"=>"29", "Pepe"=>"27")
-echo '<h2>De forma ascendente ordenado por clave.</h2>'
+echo "<h2>Ordenación de mayor a menor por el valor</h2>";
+
+// Ordenamos el array de mayor a menor por el valor
 arsort($lista);
 
-foreach ($lista as $clave => $valor){
-echo 'clave' $clave = valor $valor 
-echo "<br>"
+// Imprimimos el contenido del array
+foreach ($lista as $clave => $valor) {
+    echo "Clave: $clave - Valor: $valor";
+    echo "<br>";
 }
-list = array("Antonio"=>"31", "María"=>"28", "Juan"=>"29", "Pepe"=>"27")
-echo '<h2>De forma descendente ordenado por valor.</h2>'
+
+echo "<h2>Ordenación de menor a mayor por la clave</h2>";
+
+// Ordenamos el array de menor a mayor por la clave
 ksort($lista);
 
-foreach ($lista as $clave => $valor){
-echo 'De forma descendetne ordenado por clave.' $clave = valor $valor 
-echo "<br>"
+// Imprimimos el contenido del array
+foreach ($lista as $clave => $valor) {
+    echo "Clave: $clave - Valor: $valor";
+    echo "<br>";
 }
-list = array("Antonio"=>"31", "María"=>"28", "Juan"=>"29", "Pepe"=>"27")
-echo '<h2>Valor</h2>'
+
+echo "<h2>Ordenación de mayor a menor por la clave</h2>";
+
+// Ordenamos el array de mayor a menor por la clave
 krsort($lista);
 
-foreach ($lista as $clave => $valor){
-echo 'clave' $clave = valor $valor 
-echo "<br>"
+// Imprimimos el contenido del array
+foreach ($lista as $clave => $valor) {
+    echo "Clave: $clave - Valor: $valor";
+    echo "<br>";
 }
+
+
 ?>
